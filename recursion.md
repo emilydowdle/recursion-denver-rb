@@ -55,6 +55,8 @@ Step 8: sum(4) = 4 + sum(3) = 4 + 6 = 10
 
 #### The Stack
 
+![The Stack](https://github.com/emilydowdle/recursion-denver-rb/blob/master/stack_level_too_deep.png)
+
 
 
 
