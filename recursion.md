@@ -41,11 +41,11 @@ def sum(n)
 end
 ```
 
-Step 1: `sum(4) = 4 + sum(3)` => go get sum(3)
+Step 1: `sum(4) = 4 + sum(3)` => go get `sum(3)`
 
-Step 2: `sum(3) = 3 + sum(2)` => go get sum(2)
+Step 2: `sum(3) = 3 + sum(2)` => go get `sum(2)`
 
-Step 3: `sum(2) = 2 + sum(1)` => go get sum(1)
+Step 3: `sum(2) = 2 + sum(1)` => go get `sum(1)`
 
 Step 4: `sum(1) = 1`
 
@@ -118,7 +118,7 @@ The method should append the array with every number from n to zero in reverse o
 
 
 #### Problem #4: Replicating Ruby's `.flatten` Method
-**Hot Seat Coding as a Group**
+_Hot Seat Coding as a Group_
 
 `.flatten` takes multiple nested arrays and turns them into one 
 
