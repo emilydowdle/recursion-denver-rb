@@ -32,7 +32,7 @@ end
 
 #### Recursion Step-by-Step
 
-**Example: sum(4)**
+**Example:** `sum(4)`
 
 ```
 def sum(n)
@@ -41,11 +41,11 @@ def sum(n)
 end
 ```
 
-Step 1: `sum(4) = 4 + sum(3) => go get sum(3)`
+Step 1: `sum(4) = 4 + sum(3)` => go get sum(3)
 
-Step 2: `sum(3) = 3 + sum(2) => go get sum(2)`
+Step 2: `sum(3) = 3 + sum(2)` => go get sum(2)
 
-Step 3: `sum(2) = 2 + sum(1) => go get sum(1)`
+Step 3: `sum(2) = 2 + sum(1)` => go get sum(1)
 
 Step 4: `sum(1) = 1`
 
@@ -72,7 +72,7 @@ But our machines are limited to how much they can retain at one time. Which is w
 
 
 #### Problem #2: Appending an Array
-**Mob Coding as a Group**
+_Mob Coding as a Group_
 
 Create a recursive method that takes two parameters: an array and a number. 
 
@@ -87,17 +87,19 @@ end
 The method should append the array with every number from n to zero.
 
 **Examples:** 
+
 `append([], 2).inspect # = [2, 1, 0]`
+
 `append([], 3).inspect # = [3, 2, 1, 0]`
 
 
 #### Problem #3: Reverse Appending an Array
-**Hot Seat Coding as a Group**
+_Hot Seat Coding as a Group_
 
 Create a recursive method that takes two parameters: an array and a number. 
 
 ```
-def reverse_append([], n)
+def reverse_append(arr, n)
 
   ?
   
@@ -107,8 +109,11 @@ end
 The method should append the array with every number from n to zero in reverse order.
 
 **Examples:** 
+
 `reverse_append([], 0) # [0]`
+
 `reverse_append([], 1) # [0, 1]`
+
 `reverse_append([], 2) # [0, 1, 2]`
 
 
@@ -118,6 +123,7 @@ The method should append the array with every number from n to zero in reverse o
 `.flatten` takes multiple nested arrays and turns them into one 
 
 **Example:**
+
 `[[1, 3], [5, [7, 9]]].flatten` returns `[1, 3, 5, 7, 9]`
 
 Write a problem that takes a group of nested arrays and flattens them into one. 
