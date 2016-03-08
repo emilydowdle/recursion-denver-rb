@@ -23,42 +23,44 @@ Adding numbers is a great example of a problem that can be solved with recursion
 
 A recursive solution for this could look something like this:
 
-```def sum(n)
+```
+def sum(n)
   return 1 if n == 1 
   sum(n - 1) + n
-end```
+end
+```
 
 #### Recursion Step-by-Step
 
 **Example: sum(4)**
 
-```def sum(n)
-
+```
+def sum(n)
   return 1 if n == 1
-  
   n + sum(n - 1)
-  
-end```
+end
+```
 
-`Step 1: sum(4) = 4 + sum(3) => go get sum(3)`
+Step 1: `sum(4) = 4 + sum(3) => go get sum(3)`
 
-`Step 2: sum(3) = 3 + sum(2) => go get sum(2)`
+Step 2: `sum(3) = 3 + sum(2) => go get sum(2)`
 
-`Step 3: sum(2) = 2 + sum(1) => go get sum(1)`
+Step 3: `sum(2) = 2 + sum(1) => go get sum(1)`
 
-`Step 4: sum(1) = 1`
+Step 4: `sum(1) = 1`
 
 At this point the program has gotten all the information it needs and can return out of the method.
 
-`Step 5: sum(1) = 1`
+Step 5: `sum(1) = 1`
 
-`Step 6: sum(2) = 2 + sum(1) = 2 + 1 = 3`
+Step 6: `sum(2) = 2 + sum(1) = 2 + 1 = 3`
 
-`Step 7: sum(3) = 3 + sum(2) = 3 + 3 = 6`
+Step 7: `sum(3) = 3 + sum(2) = 3 + 3 = 6`
 
-`Step 8: sum(4) = 4 + sum(3) = 4 + 6 = 10`
+Step 8: `sum(4) = 4 + sum(3) = 4 + 6 = 10`
 
 **And that's how sum(4) returns 10**
+
 
 #### The Stack
 
@@ -74,9 +76,13 @@ But our machines are limited to how much they can retain at one time. Which is w
 
 Create a recursive method that takes two parameters: an array and a number. 
 
-```def append([], n)
+```
+def append([], n)
+ 
   ?
-end```
+
+end
+```
 
 The method should append the array with every number from n to zero.
 
@@ -90,11 +96,13 @@ The method should append the array with every number from n to zero.
 
 Create a recursive method that takes two parameters: an array and a number. 
 
-```def reverse_append([], n)
+```
+def reverse_append([], n)
 
   ?
   
-end```
+end
+```
 
 The method should append the array with every number from n to zero in reverse order.
 
@@ -115,8 +123,10 @@ The method should append the array with every number from n to zero in reverse o
 Write a problem that takes a group of nested arrays and flattens them into one. 
 _Hint: You'll want *two* parameters — the original array and the flattened array._
 
-```def flatten(arr, flattened=[])
+```
+def flatten(arr, flattened=[])
 
   ?
   
-end```
+end
+```
